@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Calculate Page</title>
+    </head>
+    <body>
+        <h1>Welcome to the Calculate Page</h1>
+        <p>This page is under construction. Please check back later for calculation features.</p>  
+        <input id ="val1" type="text" placeholder="Enter first value">
+        <input id ="val2" type="text" placeholder="Enter second value">
+        <br></br>
+        <button id="Add">Addition</button> 
+        <button id="Sub">Substraction</button> 
+        <button id="Mul">Multiplication</button>
+
+        <p id="result" ></p><br>
+         
+         <!-- <p id="result1" ></p><br> -->
+          
+          <!-- //<p id="result2" ></p><br> -->
+    
+    </body>
+
+    <script>
+
+        function calculateSum()
+         {    
+        let a=document.getElementById("val1").value;
+        let b=document.getElementById("val2").value;    
+        let result = parseInt(a) + parseInt(b);
+        document.getElementById("result").innerHTML=result;
+
+        }
+        document.getElementById("Add").onclick=calculateSum
+
+        function calculatesub()
+         {
+                 let a=document.getElementById("val1").value;
+                let b=document.getElementById("val2").value;    
+                let result = parseInt(a) - parseInt(b);
+                 document.getElementById("result").innerHTML=result;
+
+         }
+         document.getElementById("Sub").onclick=calculatesub
+
+          function calculateMul()
+         {
+                 let a=document.getElementById("val1").value;
+                let b=document.getElementById("val2").value;    
+                let result = parseInt(a) * parseInt(b);
+                 document.getElementById("result").innerHTML=result;
+
+         }
+         document.getElementById("Mul").onclick=calculateMul
+    </script>
+</html>
